@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Encontre seu próximo destino com a Rota Livre. Explore lugares incríveis e planeje sua viagem com a ajuda do nosso assistente."
+    />
+    <title>Rota Livre — sua próxima viagem começa aqui</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#inicio" aria-label="Rota Livre, início">
+        <span class="brand-mark" aria-hidden="true">↗</span>
+        <span>rota<span class="brand-light">livre</span></span>
+      </a>
+      <nav class="main-nav" aria-label="Navegação principal">
+        <a href="#destinos">Destinos</a>
+        <a href="#experiencia">Como funciona</a>
+        <a href="#sobre">Sobre nós</a>
+      </nav>
+      <button class="header-cta" type="button" data-open-chat>
+        Planejar viagem <span aria-hidden="true">↗</span>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero" id="inicio">
+        <img
+          class="hero-image"
+          src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?auto=format&fit=crop&w=2200&q=90"
+          alt="Lago azul cercado por montanhas nos Alpes"
+        />
+        <div class="hero-shade"></div>
+        <div class="hero-content">
+          <p class="eyebrow hero-eyebrow"><span></span> O mundo é seu próximo destino</p>
+          <h1>Viajar é encontrar<br />um novo <em>jeito de ver.</em></h1>
+          <p class="hero-copy">
+            Ideias, lugares e experiências para você descobrir o mundo do seu jeito.
+          </p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#destinos">Explorar destinos <span aria-hidden="true">↗</span></a>
+            <button class="button button-glass" type="button" data-open-chat>
+              <span class="sparkle" aria-hidden="true">✳</span> Converse com nosso assistente
+            </button>
+          </div>
+        </div>
+        <div class="hero-caption">
+          <span>01 / 04</span>
+          <span class="caption-rule"></span>
+          <span>Dolomitas, Itália</span>
+        </div>
+        <a class="scroll-cue" href="#destinos" aria-label="Rolar para ver destinos">↓</a>
+      </section>
+
+      <section class="intro section-wrap" id="experiencia">
+        <div>
+          <p class="eyebrow"><span class="eyebrow-dot"></span> Mais do que chegar</p>
+          <h2>Viagens que combinam<br />com <em>quem você é.</em></h2>
+        </div>
+        <div class="intro-side">
+          <p>
+            Cada viagem começa com uma vontade. A gente ajuda você a transformar a sua em
+            uma experiência inesquecível — sem complicação e no seu ritmo.
+          </p>
+          <button class="text-link" type="button" data-open-chat>
+            Encontre sua próxima viagem <span aria-hidden="true">↗</span>
+          </button>
+        </div>
+      </section>
+
+      <section class="destinations section-wrap" id="destinos">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow"><span class="eyebrow-dot"></span> Inspiração para ir mais longe</p>
+            <h2>Escolha seu <em>próximo capítulo.</em></h2>
+          </div>
+          <a class="text-link desktop-link" href="#destinos">Ver todos os destinos <span aria-hidden="true">↗</span></a>
+        </div>
+        <div class="filter-list" role="group" aria-label="Filtrar destinos por estilo">
+          <button class="filter-chip is-active" type="button" data-filter="todos" aria-pressed="true">Todos</button>
+          <button class="filter-chip" type="button" data-filter="praia" aria-pressed="false">Pé na areia</button>
+          <button class="filter-chip" type="button" data-filter="natureza" aria-pressed="false">Natureza</button>
+          <button class="filter-chip" type="button" data-filter="cidade" aria-pressed="false">Cultura & cidade</button>
+        </div>
+        <div class="destination-grid">
+          <article class="destination-card" data-category="praia">
+            <div class="card-image-wrap">
+              <img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=900&q=85" alt="Mar azul e areia branca em uma praia tropical" loading="lazy" />
+              <span class="card-tag">Pé na areia</span>
+              <button class="save-button" type="button" aria-label="Conversar sobre Maldivas" data-destination="Maldivas">↗</button>
+            </div>
+            <div class="card-info"><div><h3>Maldivas</h3><p>Oceano Índico</p></div><span class="card-arrow" aria-hidden="true">↗</span></div>
+          </article>
+          <article class="destination-card" data-category="natureza">
+            <div class="card-image-wrap">
+              <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=900&q=85" alt="Montanhas dos Andes ao entardecer" loading="lazy" />
+              <span class="card-tag">Natureza</span>
+              <button class="save-button" type="button" aria-label="Conversar sobre Patagônia" data-destination="Patagônia">↗</button>
+            </div>
+            <div class="card-info"><div><h3>Patagônia</h3><p>Argentina & Chile</p></div><span class="card-arrow" aria-hidden="true">↗</span></div>
+          </article>
+          <article class="destination-card" data-category="cidade">
+            <div class="card-image-wrap">
+              <img src="https://images.unsplash.com/photo-1516483638261-f4dbaf036963?auto=format&fit=crop&w=900&q=85" alt="Casas coloridas na costa da Itália" loading="lazy" />
+              <span class="card-tag">Cultura & cidade</span>
+              <button class="save-button" type="button" aria-label="Conversar sobre Cinque Terre" data-destination="Cinque Terre">↗</button>
+            </div>
+            <div class="card-info"><div><h3>Cinque Terre</h3><p>Ligúria, Itália</p></div><span class="card-arrow" aria-hidden="true">↗</span></div>
+          </article>
+          <article class="destination-card" data-category="natureza">
+            <div class="card-image-wrap">
+              <img src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?auto=format&fit=crop&w=900&q=85" alt="Cabana à beira de um lago entre montanhas" loading="lazy" />
+              <span class="card-tag">Natureza</span>
+              <button class="save-button" type="button" aria-label="Conversar sobre Dolomitas" data-destination="Dolomitas">↗</button>
+            </div>
+            <div class="card-info"><div><h3>Dolomitas</h3><p>Alto Ádige, Itália</p></div><span class="card-arrow" aria-hidden="true">↗</span></div>
+          </article>
+          <article class="destination-card" data-category="praia">
+            <div class="card-image-wrap">
+              <img src="https://images.unsplash.com/photo-1533105079780-92b9be482077?auto=format&fit=crop&w=900&q=85" alt="Casas brancas e mar azul na ilha de Santorini" loading="lazy" />
+              <span class="card-tag">Pé na areia</span>
+              <button class="save-button" type="button" aria-label="Conversar sobre Santorini" data-destination="Santorini">↗</button>
+            </div>
+            <div class="card-info"><div><h3>Santorini</h3><p>Cíclades, Grécia</p></div><span class="card-arrow" aria-hidden="true">↗</span></div>
+          </article>
+          <article class="destination-card" data-category="cidade">
+            <div class="card-image-wrap">
+              <img src="https://images.unsplash.com/photo-1493976040374-85c8e12f0c0e?auto=format&fit=crop&w=900&q=85" alt="Rua tradicional de Kyoto com arquitetura japonesa" loading="lazy" />
+              <span class="card-tag">Cultura & cidade</span>
+              <button class="save-button" type="button" aria-label="Conversar sobre Kyoto" data-destination="Kyoto">↗</button>
+            </div>
+            <div class="card-info"><div><h3>Kyoto</h3><p>Japão</p></div><span class="card-arrow" aria-hidden="true">↗</span></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="planner-banner section-wrap" id="sobre">
+        <div class="planner-copy">
+          <p class="eyebrow"><span class="eyebrow-dot"></span> Seu próximo destino está chamando</p>
+          <h2>Uma boa viagem<br />começa com <em>uma conversa.</em></h2>
+          <p>Conte o que você está imaginando. Nosso assistente encontra ideias que têm a sua cara.</p>
+          <button class="button button-dark" type="button" data-open-chat>Vamos planejar <span aria-hidden="true">↗</span></button>
+        </div>
+        <div class="planner-image">
+          <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1200&q=85" alt="Viajante apreciando uma paisagem montanhosa" loading="lazy" />
+          <div class="image-note"><span>✳</span><span>O melhor roteiro é<br />o que é seu.</span></div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a class="brand footer-brand" href="#inicio"><span class="brand-mark" aria-hidden="true">↗</span><span>rota<span class="brand-light">livre</span></span></a>
+      <p>O mundo espera por você.</p>
+      <span>© 2026 Rota Livre</span>
+    </footer>
+
+    <button class="chat-launcher" id="chat-launcher" type="button" aria-label="Abrir assistente de viagens" aria-expanded="false">
+      <span class="launcher-icon" aria-hidden="true">✳</span><span class="launcher-label">Planeje com a gente</span>
+    </button>
+    <section class="chat-panel" id="chat-panel" aria-label="Assistente de viagens" aria-hidden="true">
+      <div class="chat-header">
+        <div class="assistant-avatar" aria-hidden="true">✳</div>
+        <div class="assistant-details"><strong>Assistente Rota Livre</strong><span><i></i> Pronto para inspirar</span></div>
+        <button class="chat-close" id="chat-close" type="button" aria-label="Fechar conversa">×</button>
+      </div>
+      <div class="chat-messages" id="chat-messages" aria-live="polite">
+        <div class="message-row bot-row"><div class="message-avatar" aria-hidden="true">✳</div><div class="message bot-message">Oi! Que bom ter você por aqui. 🌍<br /><br />Que tipo de viagem está sonhando fazer?</div></div>
+        <div class="suggestion-list" id="suggestion-list">
+          <button type="button" class="suggestion-chip">Quero relaxar na praia</button>
+          <button type="button" class="suggestion-chip">Amo natureza e aventura</button>
+          <button type="button" class="suggestion-chip">Quero conhecer uma cidade</button>
+        </div>
+      </div>
+      <form class="chat-form" id="chat-form">
+        <label class="visually-hidden" for="chat-input">Escreva sua mensagem</label>
+        <input id="chat-input" name="message" type="text" placeholder="Escreva sua mensagem..." autocomplete="off" />
+        <button type="submit" aria-label="Enviar mensagem">↑</button>
+      </form>
+      <p class="chat-disclaimer">Assistente de inspiração · respostas automáticas</p>
+    </section>
+    <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  </body>
+</html>
