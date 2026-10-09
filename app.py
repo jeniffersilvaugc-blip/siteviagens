@@ -44,13 +44,22 @@ def get_client() -> OpenAI:
     return OpenAI()
 
 
-@app.get("/")
+@app.route("/", methods=["GET", "POST", "OPTIONS"])
 def home():
+    if request.method == "OPTIONS":
+        return "", 204
+    if request.method == "POST":
+        return chat()
     return send_from_directory(BASE_DIR, "index.html")
 
 
-@app.post("/chat")
+@app.route("/chat", methods=["POST", "OPTIONS"])
+@app.route("/api/chat", methods=["POST", "OPTIONS"])
+@app.route("/api/index.py", methods=["POST", "OPTIONS"])
 def chat():
+    if request.method == "OPTIONS":
+        return "", 204
+
     data = request.get_json(silent=True) or {}
     message = data.get("message")
     previous_response_id = data.get("previous_response_id")
